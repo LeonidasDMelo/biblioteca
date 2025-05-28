@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Cadastrar Livro e Exemplar</h2>
+<form action="cadastrar_livro_exemplar.php" method="post">
+    <!-- Dados do Livro -->
+    Titulo: <input type="text" name="titulo" required><br>
+    Autor: <input type="text" name="autor" required><br>
+    Editora: <input type="text" name="editora"><br>
+    Ano de Publicacao: <input type="number" name="ano_publicacao"><br>
+
+
+
+     <br> <label for="status">STATUS:</label>
+       
+    <br>  <select id="Disponivel" name="Disponivel" required><br>
+        <br>
+      <br>  <option value="">Selecione</option><br>
+      <br>  <option value="Disponivel">Disponivel</option><br>
+     <br>   <option value="Indisponivel">Indisponivel</option><br>
+
+  
+<br>
+    <input type="submit" value="Cadastrar Livro e Exemplar"><br>
+</form>
+</body></html>
