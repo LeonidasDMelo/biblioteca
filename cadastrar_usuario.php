@@ -1,7 +1,8 @@
 <style>
       body {
 
-            background: #f0f0f0;
+          background-image: url(https://artfiles.alphacoders.com/155/thumb-1920-155545.png);
+          background-size: cover;
             display: flex;
             justify-content: center;
             align-items: center;

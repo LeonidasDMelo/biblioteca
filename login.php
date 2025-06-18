@@ -1,17 +1,18 @@
 <style>
       body {
 
-            background: #f0f0f0;
+             background-image: url(https://images6.alphacoders.com/104/thumb-1920-1041263.jpg);
+          background-size: cover;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 1000px;
         }
 .caixa-resultado {
-            background: #fff;
+            background: transparent;
             padding: 30px;
             border-radius: 12px;
-            box-shadow: 0 0 12px rgb(0, 0, 0);
+           
             width: 300px;
             text-align: center;
         }
@@ -24,8 +25,9 @@
             display: inline-block;
             margin-top: 20px;
             text-decoration: none;
-            color:rgb(241, 183, 247);
+            color:rgb(255, 255, 255);
         }
+    
         </style>
          <div class="caixa-resultado">
 <?php
