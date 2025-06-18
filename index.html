@@ -1,33 +1,104 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Cadastrar Livro</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Escolha de Acesso</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+     background-image: url(https://images6.alphacoders.com/128/thumb-1920-1282801.jpg);
+     background-size: cover;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    .logo {
+        border-radius: 20px;
+      width: 150px;
+      height: 150px;
+      margin-bottom: 40px;
+      animation: girar 3s ;
+    }
+
+    @keyframes girar {
+      0% { transform: rotate(20deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .btn-container {
+      display: flex;
+      gap: 20px;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn-login {
+        box-shadow: 15px,10px,20px black;
+      background-color: #f07510;
+      color: white;
+    }
+
+    .btn-login:hover {
+      background-color:  #CD853F;
+    }
+
+    .btn-cadastro {
+      background-color: #CD853F;
+      color: white;
+    }
+
+    .btn-cadastro:hover {
+      background-color: #f07510;
+      
+    }
+     .mensagem {
+        color: rgb(255, 255, 255);
+        text-decoration: underline;
+      font-family: cursive;
+      margin-bottom: 20px;
+      font-size: 25px;
+     
+    }
+
+    /* Avisos baseados na âncora */
+    #aviso-login:target .mensagem {
+      display: block;
+      content: "Você escolheu Login!";
+    }
+
+    #aviso-cadastro:target .mensagem {
+      display: block;
+      content: "Você escolheu Cadastro!";
+    }
+  </style>
 </head>
 <body>
 
-  <form action="cadastrar_livro_exemplar.php" method="post">
-    <label>Título:</label><br>
-    <input type="text" name="titulo" required><br><br>
+  <!-- Substitua o src por sua logo -->
+  <img src="logo.jpg" alt="Logo" class="logo">
 
-    <label>Autor:</label><br>
-    <input type="text" name="autor" required><br><br>
+   <div class="mensagem">
+    Escolha o que deseja fazer no site.
+  </div>
 
-    <label>Editora:</label><br>
-    <input type="text" name="editora"><br><br>
+  <div class="btn-container">
+    <a href="login.html" class="btn btn-login">Login</a>
+    <a href="cadastro.html" class="btn btn-cadastro">Cadastrar</a>
+  </div>
 
-    <label>Ano de Publicação:</label><br>
-    <input type="number" name="ano_publicacao"><br><br>
 
-    <label>Status:</label><br>
-    <select name="status" required>
-      <option value="">Selecione</option>
-      <option value="Disponivel">Disponível</option>
-      <option value="Indisponivel">Indisponível</option>
-    </select><br><br>
-
-    <input type="submit" value="Cadastrar Livro e Exemplar">
-  </form>
 </body>
 </html>
+ 

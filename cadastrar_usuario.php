@@ -54,5 +54,5 @@ if ($verifica->num_rows > 0) {
     }
 }
 ?>
-<a href="index.html">Continuar➞</a>
+<a href="porra.html">Continuar➞</a>
 </div>

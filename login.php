@@ -50,5 +50,5 @@ if ($usuario = $resultado->fetch_assoc()) {
     echo "<div class='caixa'>E-mail não encontrado.";
 }
 ?>
-<a href="index.html">Continuar➞</a>
+<a href="porra.html">Continuar➞</a>
 </div>

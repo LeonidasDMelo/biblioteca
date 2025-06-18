@@ -13,7 +13,8 @@
 
 body {
   font-family: Arial, sans-serif;
-  background: #f4f4f4;
+  background-image: url(https://i.redd.it/jo0q3zr2p1ce1.jpeg);
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,10 +23,47 @@ body {
 
 /* Container principal */
 form {
+  background-color: transparent;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 15px 15px 15px  rgba(2, 78, 122, 0.87);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Título */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Rótulos */
+label {
+  font-weight: bold;
+  color: #555;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Botão */
+form {
+   
   background-color: #fff;
   padding: 30px 40px;
   border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  box-shadow: 15px 15px 15px rgba(75, 74, 74, 0.747);
   width: 100%;
   max-width: 400px;
 }
@@ -60,7 +98,7 @@ select {
 input[type="submit"] {
   width: 100%;
   padding: 12px;
-  background-color: #4CAF50;
+  background-color: #000000;
   color: white;
   border: none;
   font-size: 16px;
@@ -70,17 +108,19 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: #eeb6e6;
 }
 
 /* Links */
 p {
-  text-align: center;
-  margin-top: 15px;
+ text-align: center;
+    
+ 
+  margin-top: 10px;
 }
 
 a {
-  color: #4CAF50;
+  color: #f39def;
   text-decoration: none;
 }
 
@@ -91,7 +131,7 @@ a:hover {
  </style>
 </head>
 <body>
-  <h2>Login</h2>
+
   <form action="login.php" method="post">
     <label for="email">E-mail:</label><br>
     <input type="email" id="email" name="email" required><br><br>
@@ -100,8 +140,9 @@ a:hover {
     <input type="password" id="senha" name="senha" required><br><br>
 
     <input type="submit" value="Entrar">
+    <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
   </form>
 
-  <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+  
 </body>
 </html>

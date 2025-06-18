@@ -65,5 +65,5 @@ if ($stmt->execute()) {
     echo "Erro ao cadastrar livro.";
 }
 ?>
-<a href="index.html">← Voltar</a>
+<a href="porra.html">← Voltar</a>
 </div>
